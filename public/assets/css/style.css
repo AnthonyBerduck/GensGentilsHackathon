@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@350&display=swap');
+@import "jquery-sakura.min.css";
+@import "home.css";
+@import "map.css";
+
+:root{
+    --main-color:#CA0404;
+    --second-color:#8edffc;
+    --light-color:#E0E0E0;
+    --dark-color:#160000;
+
+    --spacing: 16px;
+    --spacing-sm: calc(var(--spacing)/2);
+    --spacing-lg: calc(var(--spacing)*2);
+
+    --main-size: 14pt;
+    --medium-size: 20pt;
+    --large-size: 30pt;
+    --extra-large-size: 70pt;
+
+    --title-font: 'Lato', sans-serif;
+    --main-font: 'Roboto', sans-serif;
+
+    overflow-x: hidden;
+}
+
+body{
+    margin:0;
+
+}
+
+h1,h2,h3{
+    font-family: var(--title-font);
+}
+
+h1{
+    font-size: var(--extra-large-size);
+}
+
+h2{
+    font-size: var(--large-size);
+    margin-bottom: 50px;
+}
+
+h3{
+    font-size: var(--medium-size);
+}
+
+p{
+    font-family: var(--main-font);
+}

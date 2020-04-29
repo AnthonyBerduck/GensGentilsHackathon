@@ -1,5 +1,38 @@
 {% extends 'layout.html.twig' %}
 
+{% block title %}Visit Japan{% endblock %}
+
 {% block content %}
-    <h1>Hello Wilder !</h1>
+    <main id="main">
+        <div class="home" id="home">
+            <img class="samurai" src="/assets/images/blackSamurai.png"/>
+            <div class="text">
+                <h1>Visit Japan</h1>
+                <p>日本へようこそ</p>
+            </div>
+        </div>
+        <div class="mapLoading">
+            <div class="map">
+                <img src="/assets/images/jpMap.jpg"/>
+                <div class="shirakawa hvr-grow">
+                    <button onclick="location.href='';"></button>
+                    <h3 id="shirakawaTitle">Shirakawa</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
+
+{% block javascript %}
+    <script src="/assets/scripts/title.js"></script>
+    <script src="/assets/scripts/loading.js"></script>
+    <script src="/assets/scripts/jquery-sakura.min.js"></script>
+    {#    <script>#}
+    {#        $(function() {#}
+    {#            $('body').sakura();#}
+    {#        });#}
+    {#        $(window).load(function() {#}
+    {#            $('body').sakura();#}
+    {#        });#}
+    {#    </script>#}
 {% endblock %}
