@@ -17,7 +17,7 @@
             <div class="map">
                 <img src="/assets/images/jpMap.jpg"/>
                 <div class="shirakawa hvr-grow">
-                    <button onclick="location.href='';"></button>
+                    <button onclick="location.href='/city/shirakawa'"></button>
                     <h3 id="shirakawaTitle">Shirakawa</h3>
                 </div>
             </div>
@@ -26,7 +26,6 @@
 {% endblock %}
 
 {% block javascript %}
-    <script src="/assets/scripts/title.js"></script>
     <script src="/assets/scripts/loadingBar.js"></script>
     <script src="/assets/scripts/loading.js"></script>
     <script src="/assets/scripts/jquery-sakura.min.js"></script>
@@ -38,4 +37,5 @@
             $('body').sakura();
         });
     </script>
+    <script src="/assets/scripts/showTitle.js"></script>
 {% endblock %}
