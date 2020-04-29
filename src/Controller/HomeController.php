@@ -25,7 +25,6 @@ class HomeController extends AbstractController
     {
         $webcamManager = new WebcamManager();
         $cities = $webcamManager->selectAllCity();
-        var_dump($cities);
         return $this->twig->render('Home/index.html.twig', ['cities' => $cities]);
     }
 }
