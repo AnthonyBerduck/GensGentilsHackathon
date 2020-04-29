@@ -1,0 +1,5 @@
+.loadingBar{
+    width:0;
+    height:10px;
+    background-color: var(--main-color);
+}

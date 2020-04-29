@@ -7,8 +7,10 @@
         <div class="home" id="home">
             <img class="samurai" src="/assets/images/blackSamurai.png"/>
             <div class="text">
+                <div class="loadingBar" id="loadingBar"></div>
                 <h1>Visit Japan</h1>
                 <p>日本へようこそ</p>
+                <div class="loadingBar" id="loadingBar2"></div>
             </div>
         </div>
         <div class="mapLoading">
@@ -25,14 +27,15 @@
 
 {% block javascript %}
     <script src="/assets/scripts/title.js"></script>
+    <script src="/assets/scripts/loadingBar.js"></script>
     <script src="/assets/scripts/loading.js"></script>
     <script src="/assets/scripts/jquery-sakura.min.js"></script>
-        <script>
-            $(function() {
-                $('body').sakura();
-            });
-            $(window).load(function() {
-                $('body').sakura();
-            });
-        </script>
+    <script>
+        $(function() {
+            $('body').sakura();
+        });
+        $(window).load(function() {
+            $('body').sakura();
+        });
+    </script>
 {% endblock %}
