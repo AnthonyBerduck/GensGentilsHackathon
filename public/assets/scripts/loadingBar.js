@@ -6,7 +6,7 @@ if (i == 0) {
     let width = 0;
     let id = setInterval(frame, 5);
     function frame() {
-        if(width<=99.7){
+        if(width<=99.8){
             width+=0.1;
             elem.style.width = width + "%";
             elem2.style.width = width + "%";
