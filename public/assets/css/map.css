@@ -1,0 +1,41 @@
+.mapLoading{
+    display: none;
+}
+
+.map{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--second-color);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.map img{
+    width: 90vh;
+}
+
+.map button{
+    width: 25px;
+    height: 25px;
+    background-color: var(--dark-color);
+    border-radius: 50%;
+    border: 2px solid var(--light-color);
+}
+
+.shirakawa{
+    position: absolute;
+    top:58vh;
+    left:52vw ;
+}
+
+.shirakawa h3{
+    text-shadow: -1px -1px 0 var(--light-color),
+    1px -1px 0 var(--light-color),
+    -1px 1px 0 var(--light-color),
+    1px 1px 0 var(--light-color);
+}
