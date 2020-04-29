@@ -1,6 +1,6 @@
 {% block webcam %}
 
-    {% for webcam in webcams %}
-<h1>{{ webcam.location.city}}</h1>
+    {% for key,value in cities %}
+        <h1>{{ key }}</h1>
     {% endfor %}
 {% endblock %}

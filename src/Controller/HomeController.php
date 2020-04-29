@@ -8,6 +8,8 @@
 
 namespace App\Controller;
 
+use App\Model\WebcamManager;
+
 class HomeController extends AbstractController
 {
 
@@ -21,6 +23,8 @@ class HomeController extends AbstractController
      */
     public function index()
     {
-        return $this->twig->render('Home/index.html.twig');
+        $webcamManager = new WebcamManager();
+        $webcams = $webcamManager->selectAllCity();
+        return $this->twig->render('Home/index.html.twig',['webcams' => $webcams]);
     }
 }

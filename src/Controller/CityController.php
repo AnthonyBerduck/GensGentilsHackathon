@@ -10,7 +10,7 @@ class CityController extends AbstractController
     public function showCityName()
     {
         $webcamManager = new WebcamManager();
-        $webcams = $webcamManager->selectAllCity();
-        return $this->twig->render('City/index.html.twig', ['webcams' => $webcams]);
+        $cities = $webcamManager->selectAllCity();
+        return $this->twig->render('City/index.html.twig', ['cities' => $cities]);
     }
 }
