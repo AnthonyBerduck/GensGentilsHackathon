@@ -7,6 +7,7 @@ use Symfony\Component\HttpClient\HttpClient;
 
 class WebcamManager
 {
+
     public function selectAllCity()
     {
         $client = HttpClient::create();
@@ -20,6 +21,9 @@ class WebcamManager
 
             $content = $response->toArray();
             $content = $content['result']['webcams'];
+            foreach ($content as $id) {
+                $content[$id];
+            }
             return $content;
         }
     }

@@ -1,6 +1,15 @@
 {% block webcam %}
 
     {% for webcam in webcams %}
+
 <h1>{{ webcam.location.city}}</h1>
+
+
+    <div>
+        <iframe id="inlineFrameExample"
+                title="Inline Frame Example"
+                width="500"
+                height="400" src="{{ webcam.player.day.embed }}"></iframe>
+    </div>
     {% endfor %}
 {% endblock %}
