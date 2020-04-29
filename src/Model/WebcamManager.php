@@ -20,13 +20,16 @@ class WebcamManager
 
             $content = $response->toArray();
             $content = $content['result']['webcams'];
+            $posXY=[[57,52],[90,36],[66,47],[63,57],[63,49]];
+            $cpt=0;
             $cities = [];
-            foreach($content as $value){
+            foreach ($content as $value) {
                 $cities+=[
                     $value['location']['city'] => [
-                        "latitude" => $value["location"]["latitude"],
-                        "longitude" => $value["location"]["longitude"],
-                        "embed" => $value["player"]["day"]["embed"]]];
+                        "wiki"=> $value["location"]["wikipedia"],
+                        "embed" => $value["player"]["day"]["embed"],
+                        "posXY" => $posXY[$cpt]]];
+                $cpt++;
             }
             return $cities;
         }
