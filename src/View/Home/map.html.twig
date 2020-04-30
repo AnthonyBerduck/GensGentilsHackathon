@@ -1,0 +1,33 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Visit Japan{% endblock %}
+
+{% block content %}
+    <main id="main">
+        <div>
+            <div class="map">
+                <img src="/assets/images/jpMap.jpg"/>
+                {% for city,value in cities %}
+                    <div class="city hvr-grow" style="top:{{ value.posXY[0] }}vh;left:{{ value.posXY[1] }}vw;">
+                        <button onclick="location.href='/city/show/{{ value.id }}'"></button>
+                        <h3>{{ city }}</h3>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+{% endblock %}
+
+{% block javascript %}
+    <script src="/assets/scripts/loading.js"></script>
+    <script src="/assets/scripts/jquery-sakura.min.js"></script>
+    <script>
+        $(function() {
+            $('body').sakura();
+        });
+        $(window).load(function() {
+            $('body').sakura();
+        });
+    </script>
+    <script src="/assets/scripts/showTitle.js"></script>
+{% endblock %}

@@ -1,3 +1,10 @@
+.cross{
+    position:absolute;
+    top:50px;
+    right:50px;
+    width:50px;
+}
+
 .city-picture img,
 .food-picture img {
     height: 400px;
