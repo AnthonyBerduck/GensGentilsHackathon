@@ -1,0 +1,11 @@
+.city-picture img,
+.food-picture img {
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.city-picture img {
+    margin: var(--spacing-lg);
+}
