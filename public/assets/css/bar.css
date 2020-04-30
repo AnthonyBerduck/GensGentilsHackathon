@@ -1,0 +1,64 @@
+::-webkit-scrollbar{
+    width: 0;
+}
+
+#scrollPath
+{
+    position: fixed;
+    top:0;
+    left:0;
+    width:10px;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+}
+
+#progressBar
+{
+    position: fixed;
+    top:0;
+    left:0;
+    width:10px;
+    height: 100%;
+    background: var(--main-color);
+    animation: animate 5s linear infinite;
+}
+
+
+#progressBar2
+{
+    position: fixed;
+    top:0;
+    right:0;
+    width:10px;
+    height: 100%;
+    background: var(--main-color);
+    animation: animate 5s linear infinite;
+}
+
+#scrollPath2
+{
+    position: fixed;
+    top:0;
+    right:0;
+    width:10px;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+}
+
+#progressBar:before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+
+#progressBar2:before{
+    content:'';
+    position: absolute;
+    top:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+}
