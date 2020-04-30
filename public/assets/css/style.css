@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@350&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@600&display=swap');
 @import "jquery-sakura.min.css";
 @import "home.css";
 @import "map.css";
@@ -22,6 +23,7 @@
 
     --title-font: 'Lato', sans-serif;
     --main-font: 'Roboto', sans-serif;
+    --title-page-font : 'Vollkorn', serif;
 
     overflow-x: hidden;
 }
@@ -41,6 +43,7 @@ h1{
 
 h2{
     font-size: var(--large-size);
+    margin-top: 70px;
     margin-bottom: 50px;
 }
 

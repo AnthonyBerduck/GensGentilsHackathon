@@ -9,3 +9,13 @@
 .city-picture img {
     margin: var(--spacing-lg);
 }
+
+.city-title{
+    text-align: center;
+    padding: var(--spacing);
+    font-family: var(--title-page-font);
+}
+
+.intro-city{
+    margin: 20px;
+}
