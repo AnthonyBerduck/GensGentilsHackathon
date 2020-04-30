@@ -15,6 +15,14 @@
 {% block webcam %}
 
     <h1 class="city-title">{{ city.city }}</h1>
+    <div class="d-flex justify-content-center">
+    <iframe id="inlineFrameExample"
+            title="Inline Frame Example"
+            height="600"
+            width="700"
+            src="{{  city.embed }}">
+    </iframe>
+    </div>
 
     <div class="row">
         <div class="col-lg-8 mx-auto">
