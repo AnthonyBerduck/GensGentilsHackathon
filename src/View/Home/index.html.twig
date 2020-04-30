@@ -18,7 +18,7 @@
                 <img src="/assets/images/jpMap.jpg"/>
                 {% for city,value in cities %}
                     <div class="city hvr-grow" style="top:{{ value.posXY[0] }}vh;left:{{ value.posXY[1] }}vw;">
-                        <button onclick="location.href='/city/index?{{ city }}'"></button>
+                        <button onclick="location.href='/city/show/{{ value.id }}'"></button>
                         <h3>{{ city }}</h3>
                     </div>
                 {% endfor %}

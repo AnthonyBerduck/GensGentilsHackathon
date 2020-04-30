@@ -28,9 +28,11 @@ class WebcamManager
                     $value['location']['city'] => [
                         "wiki"=> $value["location"]["wikipedia"],
                         "embed" => $value["player"]["day"]["embed"],
-                        "posXY" => $posXY[$cpt]]];
+                        "posXY" => $posXY[$cpt],
+                        "id" => ($cpt+1)]];
                 $cpt++;
             }
+            var_dump($cities);
             return $cities;
         }
     }
