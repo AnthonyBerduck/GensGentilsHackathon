@@ -1,13 +1,12 @@
 <?php
 
-
 namespace App\Controller;
 
 use App\Model\HistoryManager;
 use App\Model\WebcamManager;
 
 class CityController extends AbstractController
-{/*
+{
     public function showCityName()
     {
         $webcamManager = new WebcamManager();
@@ -25,7 +24,7 @@ class CityController extends AbstractController
          * @throws \Twig\Error\SyntaxError
          */
 
-    public function show(string $id)
+    public function show(int $id)
     {
         $historyManager = new HistoryManager();
         $cityPage = $historyManager->selectOneById($id);
