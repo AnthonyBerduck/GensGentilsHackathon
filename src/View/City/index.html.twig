@@ -12,10 +12,11 @@
     <link rel="icon" href="/assets/images/favicon.png">
 </head>
 {% block webcam %}
-
-    {% for key,value in cities %}
-        <h1>{{ key }}</h1>
-    {% endfor %}
+<h1>{{ city.city }}</h1>
+    <div>{{ city.description }}</div>
+    <div>{{ city.fact }}</div>
+    <h2>{{ city.dish }}</h2>
+    <div>{{ city.ingredient1 }}</div>
 
     {% include 'City/recipe.html.twig' %}
 {% endblock %}
