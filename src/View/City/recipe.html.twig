@@ -1,13 +1,17 @@
 <!-- Receipe Content Area -->
 <div class="receipe-content-area">
     <div class="container">
+        <h2>Le Japon s'invite à votre table !</h2>
         <div class="food-picture d-flex justify-content-center mt-4">
             <img src="/./assets/images/{{ city.foodpic }}" alt="image du plat">
         </div>
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <div class="receipe-headline my-5">
-                    <h2>{{ city.dish }}</h2>
+                    <div class="picto-food d-flex justify-content-between">
+                        <h2>{{ city.dish }}</h2>
+                        <img src="/./assets/images/baguettes.png" alt="baguettes">
+                    </div>
                     <div class="receipe-duration">
                         <h6>Préparation: {{ city.time }}</h6>
                     </div>

@@ -11,7 +11,7 @@ class WebcamManager
     {
         $client = HttpClient::create();
         $url = 'https://api.windy.com/api/webcams/v2/list/webcam=';
-        $listCam = '1484444428,1349984404,1280161113,1468127651,1570233383?show=webcams:image';
+        $listCam = '1484444428,1349984404,1280161113,1461792534,1570233383?show=webcams:image';
         $response = $client->request('GET', $url . $listCam . ',location,player&key=mBdIU57w2qavbCxCWYFlj96tenbqc3UW');
         $statusCode = $response->getStatusCode(); // get Response status code 200
         if ($statusCode === 200) {
