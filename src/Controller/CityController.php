@@ -7,7 +7,7 @@ use App\Model\WebcamManager;
 
 class CityController extends AbstractController
 {
-    public function showCityName()
+    public function index()
     {
         $webcamManager = new WebcamManager();
         $cities = $webcamManager->selectAllCity();
