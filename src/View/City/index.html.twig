@@ -15,8 +15,8 @@
 {% block webcam %}
     <h1>{{ city.city }}</h1>
     <div>{{ city.description }}</div>
-    <img src="/./assets/images/{{ city.picture1 }}">
-    <img src="/./assets/images/{{ city.picture2 }}">
+    <img src="/./assets/images/{{ city.picture1 }}" alt="photo d'un monument de la ville ou paysage">
+    <img src="/./assets/images/{{ city.picture2 }}" lt="photo d'un monument de la ville ou paysage">
     <div>{{ city.fact }}</div>
 
     {% include 'City/recipe.html.twig' %}
