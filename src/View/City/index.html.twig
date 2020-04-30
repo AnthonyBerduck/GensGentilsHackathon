@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="fr">
 <head>
     <meta charset="utf-8">
@@ -12,8 +11,9 @@
     {% block stylesheet %}{% endblock %}
     <link rel="icon" href="/assets/images/favicon.png">
 </head>
+
 {% block webcam %}
-<h1>{{ city.city }}</h1>
+    <h1>{{ city.city }}</h1>
     <div>{{ city.description }}</div>
     <div class="city-picture d-flex justify-content-center flex-wrap">
         <img src="/./assets/images/{{ city.picture1 }}" alt="photo d'un monument de la ville ou paysage">
