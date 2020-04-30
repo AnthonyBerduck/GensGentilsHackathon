@@ -15,9 +15,9 @@
 {% block webcam %}
 <h1>{{ city.city }}</h1>
     <div>{{ city.description }}</div>
+    <img src="/./assets/images/{{ city.picture1 }}">
+    <img src="/./assets/images/{{ city.picture2 }}">
     <div>{{ city.fact }}</div>
-    <h2>{{ city.dish }}</h2>
-    <div>{{ city.ingredient1 }}</div>
 
     {% include 'City/recipe.html.twig' %}
 {% endblock %}
