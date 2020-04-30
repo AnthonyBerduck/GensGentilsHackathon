@@ -2,10 +2,11 @@
 @import "jquery-sakura.min.css";
 @import "home.css";
 @import "map.css";
+@import "recipe.css";
 
 :root{
     --main-color:#CA0404;
-    --second-color:#8edffc;
+    --second-color: #8edffc;
     --light-color:#E0E0E0;
     --dark-color:#160000;
 
