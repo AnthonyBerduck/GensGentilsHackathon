@@ -1,6 +1,8 @@
 {% block webcam %}
+<h1>{{ city.city }}</h1>
+    <div>{{ city.description }}</div>
+    <div>{{ city.fact }}</div>
+    <h2>{{ city.dish }}</h2>
+    <div>{{ city.ingredient1 }}</div>
 
-    {% for key,value in cities %}
-        <h1>{{ key }}</h1>
-    {% endfor %}
 {% endblock %}
