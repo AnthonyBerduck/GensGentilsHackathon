@@ -3,6 +3,7 @@
 @import "home.css";
 @import "map.css";
 @import "recipe.css";
+@import "city.css";
 
 :root{
     --main-color:#CA0404;

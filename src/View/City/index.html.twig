@@ -4,21 +4,23 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}{{ city.city }}{% endblock %}</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/style.css">
     {% block stylesheet %}{% endblock %}
-    <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="icon" href="/assets/images/favicon.ico">
 </head>
 
 {% block webcam %}
+    <a href="/home/index"><img class="cross hvr-grow" src="/assets/images/crossIcon.png" alt="quit"></a>
     <h1>{{ city.city }}</h1>
     <div>{{ city.description }}</div>
     <img src="/./assets/images/{{ city.picture1 }}" alt="photo d'un monument de la ville ou paysage">
-    <img src="/./assets/images/{{ city.picture2 }}" lt="photo d'un monument de la ville ou paysage">
+    <img src="/./assets/images/{{ city.picture2 }}" alt="photo d'un monument de la ville ou paysage">
     <div>{{ city.fact }}</div>
 
     {% include 'City/recipe.html.twig' %}
+
 {% endblock %}
 </html>
