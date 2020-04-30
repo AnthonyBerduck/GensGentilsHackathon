@@ -22,6 +22,10 @@
         <img src="/./assets/images/{{ city.picture2 }}" alt="photo d'un monument de la ville ou paysage">
     </div>
 
+    <div class="flexMid" style="margin-bottom: 30px">
+        <a class="hvr-grow" href=""{{ city.wiki }}><h3>Wikipedia {{ city.city }}</h3></a>
+    </div>
+
     <div class="row">
         <div class="col-lg-8 mx-auto">
 
@@ -35,9 +39,11 @@
         </div>
     </div>
 
-    <div></div>
-
     {% include 'City/recipe.html.twig' %}
+
+    <footer class="flexMid">
+        <a class="hvr-grow" href="/home/map" style="margin-bottom:30px"><h3>Retour à la carte du Japon</h3></a>
+    </footer>
 
 {% endblock %}
 </html>
