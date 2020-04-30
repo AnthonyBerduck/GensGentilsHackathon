@@ -7,32 +7,37 @@
         <div class="home" id="home">
             <img class="samurai" src="/assets/images/blackSamurai.png"/>
             <div class="text">
+                <div class="loadingBar" id="loadingBar"></div>
                 <h1>Visit Japan</h1>
                 <p>日本へようこそ</p>
+                <div class="loadingBar" id="loadingBar2"></div>
             </div>
         </div>
         <div class="mapLoading">
             <div class="map">
                 <img src="/assets/images/jpMap.jpg"/>
-                <div class="shirakawa hvr-grow">
-                    <button onclick="location.href='';"></button>
-                    <h3 id="shirakawaTitle">Shirakawa</h3>
-                </div>
+                {% for city,value in cities %}
+                    <div class="city hvr-grow" style="top:{{ value.posXY[0] }}vh;left:{{ value.posXY[1] }}vw;">
+                        <button onclick="location.href='/city/index?{{ city }}'"></button>
+                        <h3>{{ city }}</h3>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </main>
 {% endblock %}
 
 {% block javascript %}
-    <script src="/assets/scripts/title.js"></script>
+    <script src="/assets/scripts/loadingBar.js"></script>
     <script src="/assets/scripts/loading.js"></script>
     <script src="/assets/scripts/jquery-sakura.min.js"></script>
-        <script>
-            $(function() {
-                $('body').sakura();
-            });
-            $(window).load(function() {
-                $('body').sakura();
-            });
-        </script>
+    <script>
+        $(function() {
+            $('body').sakura();
+        });
+        $(window).load(function() {
+            $('body').sakura();
+        });
+    </script>
+    <script src="/assets/scripts/showTitle.js"></script>
 {% endblock %}
