@@ -28,6 +28,9 @@ class CityController extends AbstractController
     {
         $historyManager = new HistoryManager();
         $cityPage = $historyManager->selectOneById($id);
+        $webcamManager = new WebcamManager();
+        $cities = $webcamManager->selectAllCity();
+        $cityPage=$cityPage+$cities[$cityPage['city']];
         return $this->twig->render('City/index.html.twig', ['city' => $cityPage]);
     }
 
