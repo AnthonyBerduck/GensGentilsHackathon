@@ -16,9 +16,26 @@
     <a href="/home/index"><img class="cross hvr-grow" src="/assets/images/crossIcon.png" alt="quit"></a>
     <h1>{{ city.city }}</h1>
     <div>{{ city.description }}</div>
-    <img src="/./assets/images/{{ city.picture1 }}" alt="photo d'un monument de la ville ou paysage">
-    <img src="/./assets/images/{{ city.picture2 }}" alt="photo d'un monument de la ville ou paysage">
     <div>{{ city.fact }}</div>
+    <div class="city-picture d-flex justify-content-center flex-wrap">
+        <img src="/./assets/images/{{ city.picture1 }}" alt="photo d'un monument de la ville ou paysage">
+        <img src="/./assets/images/{{ city.picture2 }}" alt="photo d'un monument de la ville ou paysage">
+    </div>
+
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+
+            <!-- CUSTOM BLOCKQUOTE -->
+            <blockquote class="blockquote bg-white p-5 shadow rounded">
+                <div class="bg-info shadow-sm"><i class="fa fa-quote-left text-white"></i></div>
+                <p class="mb-0 mt-2 font-italic">{{ city.fact }}</p>
+            </blockquote>
+            <!-- END -->
+
+        </div>
+    </div>
+
+    <div></div>
 
     {% include 'City/recipe.html.twig' %}
 
