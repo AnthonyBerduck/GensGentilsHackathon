@@ -1,0 +1,114 @@
+<!-- Receipe Content Area -->
+
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+        <div class="picto-food d-flex justify-content-between align-items-center">
+            <h2>Le Japon s'invite à votre table !</h2>
+        </div>
+
+<div class="receipe-content-area">
+    <div class="container">
+        <div class="food-picture d-flex justify-content-center mt-4">
+            <img src="/./assets/images/{{ city.foodpic }}" alt="image du plat">
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="receipe-headline my-5">
+                    <div class="picto-food d-flex justify-content-between align-items-center">
+                        <h3>{{ city.dish }}</h3>
+                        <img src="/./assets/images/baguettes.png" alt="baguettes">
+                    </div>
+                    <div class="receipe-duration">
+                        <h6>Préparation: {{ city.time }}</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Single Preparation Step -->
+                <div class="single-preparation-step d-flex">
+                    <h4>01.</h4>
+                    <p>{{ city.step1 }}</p>
+                </div>
+                <!-- Single Preparation Step -->
+                <div class="single-preparation-step d-flex">
+                    <h4>02.</h4>
+                    <p>{{ city.step2 }}</p>
+                </div>
+                <!-- Single Preparation Step -->
+                <div class="single-preparation-step d-flex">
+                    <h4>03.</h4>
+                    <p>{{ city.step3 }}</p>
+                </div>
+                <!-- Single Preparation Step -->
+                <div class="single-preparation-step d-flex">
+                    <h4>04.</h4>
+                    <p>{{ city.step4 }}</p>
+                </div>                <!-- Single Preparation Step -->
+                <div class="single-preparation-step d-flex">
+                    <h4>05.</h4>
+                    <p>{{ city.step5 }}</p>
+                </div>
+
+            </div>
+
+            <!-- Ingredients -->
+            <div class="col-lg-4">
+                <div class="ingredients pr-4">
+                    <h4 class="pt-2" style="padding-top:40px!important;">Ingrédients</h4>
+
+                    <!-- Custom Checkbox -->
+                    <div class="custom-control">
+                        <p class="">{{ city.ingredient1 }} {{ city.quantity1 }}</p>
+                    </div>
+
+                    <!-- Custom Checkbox -->
+                    <div class="custom-control custom-checkbox">
+                        <p class="">{{ city.ingredient2 }} {{ city.quantity2 }}</p>
+                    </div>
+
+                    <!-- Custom Checkbox -->
+                    <div class="custom-control custom-checkbox">
+                        <p class="">{{ city.ingredient3 }} {{ city.quantity3 }}</p>
+                    </div>
+
+                    <!-- Custom Checkbox -->
+                    <div class="custom-control custom-checkbox">
+                        <p class="">{{ city.ingredient4 }} {{ city.quantity4 }}</p>
+                    </div>
+
+                    <!-- Custom Checkbox -->
+                    <div class="custom-control custom-checkbox">
+                        <p class="">{{ city.ingredient5 }} {{ city.quantity6 }}</p>
+                    </div>
+
+                    <!-- Custom Checkbox -->
+                    <div class="custom-control custom-checkbox">
+                        <p class="">{{ city.ingredient6 }} {{ city.quantity6 }}</p>
+                    </div>
+
+                    <!-- Custom Checkbox -->
+                    <div class="custom-control custom-checkbox">
+                        <p class="">{{ city.ingredient7 }} {{ city.quantity7 }}</p>
+                    </div>
+
+                    <!-- Custom Checkbox -->
+                    <div class="custom-control custom-checkbox">
+                        <p class="">{{ city.ingredient8 }} {{ city.quantity8 }}</p>
+                    </div>
+                    <!-- Custom Checkbox -->
+                    <div class="custom-control custom-checkbox">
+                        <p class="">{{ city.ingredient9 }} {{ city.quantity9 }}</p>
+                    </div>                    <!-- Custom Checkbox -->
+                    <div class="custom-control custom-checkbox">
+                        <p class="">{{ city.ingredient10 }} {{ city.quantity10 }}</p>
+                    </div>                    <!-- Custom Checkbox -->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

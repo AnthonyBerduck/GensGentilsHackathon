@@ -1,0 +1,35 @@
+@import 'footer.css';
+@import 'bar.css';
+
+.cross{
+    position:fixed;
+    top:75px;
+    right:75px;
+    width:50px;
+}
+
+.city-picture img,
+.food-picture img {
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.city-picture img {
+    margin: var(--spacing-lg);
+}
+
+.city-title{
+    text-align: center;
+    margin: var(--spacing);
+    font-family: var(--title-page-font);
+}
+
+.intro-city{
+    margin: 20px;
+}
+
+.torii{
+    height: 80px;
+}
