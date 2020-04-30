@@ -32,7 +32,6 @@ class WebcamManager
                         "id" => ($cpt+1)]];
                 $cpt++;
             }
-            var_dump($cities);
             return $cities;
         }
     }
