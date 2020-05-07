@@ -10,4 +10,6 @@ Installez-vous et profitez du voyage !
 
 Amandine Helene, Marine Eugenie, Emmanuelle Mendels et Anthony Berduck.
 
+↓↓ Cliquez sur l'image si dessous pour voir une demo ↓↓
+
 [![Demo dispo ici !](https://www.nacel.fr/medias/_cache/produits/585/imagePrincipale/1920_1440/sejour-linguistique-encadre-japon-tokyo.jpg)](https://www.youtube.com/watch?v=fqLAQZjzPw0)
